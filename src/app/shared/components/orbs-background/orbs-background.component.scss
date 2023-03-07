@@ -1,0 +1,70 @@
+// based on https://codepen.io/hylobates-lar
+
+@mixin orbs-background-dots($count) {
+  $text-shadow: ();
+  @for $i from 0 through $count {
+    $text-shadow: $text-shadow,
+      (-0.5+ (random()) * 3) +
+        em
+        (-0.5+ (random()) * 3) +
+        em
+        7px
+        hsla(random() * 360, 100%, 50%, 0.9);
+  }
+  text-shadow: $text-shadow;
+}
+
+.orbs-background {
+  overflow: hidden;
+  background: #123;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.orbs-background__orbs {
+  display: block;
+  font-size: 50px;
+  color: transparent;
+  &::before,
+  &::after {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    content: ".";
+    mix-blend-mode: screen;
+    animation: 44s -25s orbs-background-move infinite ease-in-out alternate;
+  }
+  &--low-speed::before {
+    @include orbs-background-dots(40);
+    animation-duration: 49s;
+    animation-delay: -28s;
+  }
+  &--low-speed::after {
+    @include orbs-background-dots(40);
+    animation-duration: 48s;
+    animation-delay: -35s;
+  }
+
+  &--high-speed::before {
+    @include orbs-background-dots(40);
+    animation-duration: 39s;
+    animation-delay: -19s;
+  }
+
+  &--high-speed::after {
+    @include orbs-background-dots(40);
+    animation-duration: 41s;
+    animation-delay: -15;
+  }
+}
+
+@keyframes orbs-background-move {
+  from {
+    transform: rotate(0deg) scale(10) translateX(-20px);
+  }
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}

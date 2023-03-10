@@ -20,12 +20,15 @@
                     <img [src]="flowers2" alt="" />
                 </div>
                 <div class="home__section__item home__section__b">
+
                     <h3>
                         Paintly Gets The Job Done
                     </h3>
                 </div>
                 <div class="home__section__item home__section__c">
-                    <button>Try the editor</button>
+                    <app-link-button [onClick]="changeRoute">
+                        Try the editor
+                    </app-link-button>
                 </div>
             </div>
 
@@ -43,7 +46,7 @@
                     </h3>
                 </div>
                 <div class="home__section__item home__section__c">
-                    <button>create an account</button>
+                    <app-link-button [onClick]="changeRoute"> Create an account</app-link-button>
                 </div>
             </div>
         </div>

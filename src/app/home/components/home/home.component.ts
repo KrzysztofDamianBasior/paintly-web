@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,11 @@ export class HomeComponent implements OnInit {
   leaves1: string = 'assets/leaves1.png';
   leaves2: string = 'assets/leaves2.png';
 
-  constructor() {}
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {}
+
+  changeRoute(): void {
+    console.log('test');
+  }
 }

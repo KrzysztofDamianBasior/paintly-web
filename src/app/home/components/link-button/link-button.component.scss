@@ -1,0 +1,23 @@
+.link-btn {
+  color: #ffffff;
+  padding: 13px 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 14px -7px #09262c;
+  border-radius: 8px;
+  transition: 1000ms;
+  transform: translateY(0);
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+}
+
+.link-btn:hover {
+  transition: 1000ms;
+  padding: 10px 44px;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #1e474e 5%, #599bb3 100%);
+}
+
+.link-btn:active {
+  position: relative;
+  top: 5px;
+}

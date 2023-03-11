@@ -5,10 +5,16 @@ import { SharedModule } from '../shared/shared.module';
 import { LinkButtonComponent } from './components/link-button/link-button.component';
 import { TextTypingAnimationComponent } from './components/text-typing-animation/text-typing-animation.component';
 import { ComplexTextTypingAnimationComponent } from './components/complex-text-typing-animation/complex-text-typing-animation.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [HomeComponent, LinkButtonComponent, TextTypingAnimationComponent, ComplexTextTypingAnimationComponent],
-  imports: [CommonModule, SharedModule],
+  declarations: [
+    HomeComponent,
+    LinkButtonComponent,
+    TextTypingAnimationComponent,
+    ComplexTextTypingAnimationComponent,
+  ],
+  imports: [CommonModule, RouterModule, SharedModule],
   exports: [HomeComponent],
 })
 export class HomeModule {}

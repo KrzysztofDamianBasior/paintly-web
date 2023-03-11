@@ -1,0 +1,17 @@
+<nav class="navbar">
+    <ul>
+        <li class="navbar__logo">
+            Paintly
+        </li>
+
+        <li class="navbar__burger" (click)="toggleMenu()">
+            <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+        </li>
+
+        <li class="navbar__menu" [class.is-open]="isMenuOpen">
+            <a routerLinkActive="active" [routerLink]="['/']" class="menu-item">Home</a>
+            <a routerLinkActive="active" [routerLink]="['/editor']" class="menu-item">Editor</a>
+            <a routerLinkActive="active" [routerLink]="['/auth']" class="menu-item">Profile</a>
+        </li>
+    </ul>
+</nav>

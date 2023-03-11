@@ -1,0 +1,51 @@
+.footer {
+  position: relative;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 2rem;
+  color: #fff;
+  z-index: 100;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    p {
+      padding: 0.8rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    li {
+      margin: 0 1rem;
+
+      cursor: pointer;
+      z-index: 500;
+      a {
+        i {
+          font-size: 1.1rem;
+          transition: color 0.4s ease;
+        }
+      }
+      &:hover {
+        color: #599bb3;
+      }
+    }
+  }
+
+  &__bottom {
+    background: #000000;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+}

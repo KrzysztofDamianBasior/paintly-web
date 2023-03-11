@@ -1,12 +1,16 @@
 $menuHeight: 60px;
 $menuBreakpoint: 600px;
 
+.active {
+  text-decoration: underline;
+}
+
 .navbar {
   ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
   }
 
   &__logo {
@@ -20,6 +24,7 @@ $menuBreakpoint: 600px;
     display: none;
     cursor: pointer;
     z-index: 100;
+    transition: background 0.5s ease;
     &:hover {
       background: #e8e8e8;
     }
@@ -60,6 +65,7 @@ $menuBreakpoint: 600px;
       &:hover {
         background: #e8e8e8;
       }
+      transition: background 0.5s ease;
       z-index: 100;
       cursor: pointer;
       padding: 0 2rem;

@@ -5955,6 +5955,11 @@ symbol-observable@4.0.0:
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-4.0.0.tgz#5b425f192279e87f2f9b937ac8540d1984b39205"
   integrity sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ==
 
+t-writer.js@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/t-writer.js/-/t-writer.js-1.0.4.tgz#29d84746dabedcfd79792ba83c672361bf07831c"
+  integrity sha512-VDmg2L43dYVbdmduaX5Ea+osiXVtgIsVDr/sfuT01Q2Ypvy6AZINyb4JROP1wEBATM5++l74vio0Au1s57XVJg==
+
 tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"

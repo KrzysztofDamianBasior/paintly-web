@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,8 @@ export class HomeComponent implements OnInit {
   flowers2: string = 'assets/flowers2.jpg';
   leaves1: string = 'assets/leaves1.png';
   leaves2: string = 'assets/leaves2.png';
+
+  apiURL = environment.apiURL;
 
   constructor(private route: ActivatedRoute) {}
 
